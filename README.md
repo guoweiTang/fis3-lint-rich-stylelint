@@ -29,7 +29,7 @@ See the **options** what is same as [stylelint lint](https://stylelint.io/user-g
     "formatter": 'string',
     "useEslintrc": false,
     "config": {
-        "rules: rules
+        "rules": rules
     }
 }
 ```
