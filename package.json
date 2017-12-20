@@ -17,6 +17,9 @@
     "nodejs",
     "javascript"
   ],
+  "engines": {
+    "node": ">= 4.7.0"
+  },
   "author": "ice.tang",
   "license": "ISC",
   "bugs": {
