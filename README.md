@@ -54,7 +54,6 @@ As mentioned above, the following is introduce of **rules**:
 
 #### Specific Syntax
 * [warn : function-calc-no-unspaced-operator] 禁止calc语句中计算符（+、-、*、/）两侧无空格
-* `[error : function-linear-gradient-no-nonstandard-direction] 禁止liner-gradient中无效的方向值`
 * `[error : declaration-no-important] 禁止!important`
 * `[error : media-feature-name-no-unknown] 禁止未知的media名称`
 * `[error : no-duplicate-at-import-rules] 禁止值重复的@import语句`

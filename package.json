@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-stylelint",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "a based stylelint plugin for fis3",
   "main": "index.js",
   "scripts": {
@@ -82,7 +82,6 @@
         "severity": "warning"
       }
     ],
-    "function-linear-gradient-no-nonstandard-direction": true,
     "declaration-no-important": true,
     "media-feature-name-no-unknown": true,
     "no-duplicate-at-import-rules": true,
@@ -115,10 +114,14 @@
       }
     ],
     "unit-no-unknown": true,
-    "property-no-unknown": true,
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["linear-gradient"]
+    }],
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
-    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-duplicate-properties": [true, {
+      "ignoreProperties": ["background"]
+    }],
     "no-duplicate-selectors": true,
     "no-extra-semicolons": true,
     "declaration-block-trailing-semicolon": "always",
