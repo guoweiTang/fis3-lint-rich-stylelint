@@ -26,7 +26,7 @@ See the **options** what is same as [stylelint lint](https://stylelint.io/user-g
 ``` js
 {
     'fix': false,
-    'allowOutfixed': false, // 允许输出修复后的文件到目录'/stylelint-fixed/**',生效的前提是fix值为true
+    'allowOutfixed': false, // 允许输出修复后的文件到目录'/lint-fixed/**',生效的前提是fix值为true
     'code': fileText,
     'formatter': 'string',
     'useEslintrc': false,
