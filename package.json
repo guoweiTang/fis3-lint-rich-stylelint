@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-stylelint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a based stylelint plugin for fis3",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,18 @@
     ],
     "block-no-empty": true,
     "comment-no-empty": true,
+    "comment-whitespace-inside": [
+      "always",
+      {
+        "severity": "warning"
+      }
+    ],
+    "value-list-comma-space-before": [
+      "never",
+      {
+        "severity": "warning"
+      }
+    ],
     "value-list-comma-space-after": [
       "always",
       {
@@ -99,6 +111,24 @@
         "severity": "warning"
       }
     ],
+    "number-leading-zero": [
+      "never",
+      {
+        "severity": "warning"
+      }
+    ],
+    "number-no-trailing-zeros": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
     "color-no-invalid-hex": true,
     "color-named": [
       "never",
@@ -131,6 +161,7 @@
         "severity": "warning"
       }
     ],
+    "selector-type-case": "lower",
     "value-keyword-case": "lower",
     "property-case": "lower"
   },
