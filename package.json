@@ -144,14 +144,24 @@
       }
     ],
     "unit-no-unknown": true,
-    "property-no-unknown": [true, {
-      "ignoreProperties": ["linear-gradient"]
-    }],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "linear-gradient"
+        ]
+      }
+    ],
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
-    "declaration-block-no-duplicate-properties": [true, {
-      "ignoreProperties": ["background"]
-    }],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignoreProperties": [
+          "background"
+        ]
+      }
+    ],
     "no-duplicate-selectors": true,
     "no-extra-semicolons": true,
     "declaration-block-trailing-semicolon": "always",
@@ -162,13 +172,14 @@
       }
     ],
     "selector-type-case": "lower",
-    "value-keyword-case": "lower",
     "property-case": "lower"
   },
   "engines": {
     "node": ">= 4.7.0"
   },
-  "author": "ice.tang",
+  "author": {
+    "name": "ice.tang"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/guoweiTang/fis3-lint-rich-stylelint/issues"

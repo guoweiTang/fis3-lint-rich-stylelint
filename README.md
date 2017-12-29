@@ -87,7 +87,6 @@ As mentioned above, the following is introduce of **rules**:
 * `[error : declaration-block-trailing-semicolon] 语句必须分号结尾`
 * [warn : string-quotes] 字符串的引号必须为双引号
 * `[error : selector-type-case] 标签选择器必须是小写`
-* `[error : value-keyword-case] 属性值必须是小写`
 * `[error : property-case] 属性名小写`
 
 #### Turning rules off from within your CSS
