@@ -26,7 +26,7 @@ See the **options** what is same as [stylelint lint](https://stylelint.io/user-g
 ``` js
 {
     'fix': false,
-    'allowOutfixed': false, // 允许输出修复后的文件到目录'/lint-fixed/**',生效的前提是fix值为true
+    'allowOutfixed': false,
     'code': fileText,
     'formatter': 'string',
     'useEslintrc': false,
@@ -35,6 +35,13 @@ See the **options** what is same as [stylelint lint](https://stylelint.io/user-g
     }
 }
 ```
+### allowOutfixed: Boolean | [Boolean, options]
+Output the restored file to the directory '/lint-fixed/**', the premise is that the value of fix is true
+#### options
+* `"root": true` Get root permissions, it will modify the source file，this operation does't promise correctness, so be careful!!!
+* `"dirname": '/lint-fixed'` Specify the root directory of the repaired file output
+
+### Rules
 As mentioned above, the following is introduce of **rules**:
 
 #### Spaces or Empty lines
