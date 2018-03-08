@@ -6,11 +6,11 @@
 [![npm](https://img.shields.io/npm/dm/fis3-lint-rich-stylelint.svg)](https://www.npmjs.com/package/fis3-lint-rich-stylelint)
 ## Dependencies
 * [node]() (^4.7.0)
-* [stylelint](https://github.com/eslint/eslint) (^8.4.0)
+* [stylelint](https://github.com/stylelint/stylelint) (^8.4.0)
 
 ## Installation
 ``` shell
-$ npm install fis3-lint-rich-stylelint [--save]
+$ npm install fis3-lint-rich-stylelint [--save-dev]
 ```
 
 ## Usages
@@ -57,7 +57,7 @@ As mentioned above, the following is introduce of **rules**:
 * [warn : block-closing-brace-empty-line-before] 语句块（右大括号）结束前一行不能是空行
 * `[error : block-opening-brace-newline-after] 多行语句块（左大括号）后必须换行`
 * [warn : block-opening-brace-space-before] 语句块（左大括号）开始前必须有空格
-* `[error : declaration-colon-space-after] 属性值（冒号后）之前必须有空格`
+* `[error : declaration-colon-space-after] 属性值之前（冒号后）必须有空格`
 * [warn : rule-empty-line-before] 多行规则的语句块间必须有空行
 
 
@@ -67,7 +67,7 @@ As mentioned above, the following is introduce of **rules**:
 * [warn : function-calc-no-unspaced-operator] 禁止calc语句中计算符（+、-、*、/）两侧无空格
 * `[error : declaration-no-important] 禁止!important`
 * `[error : media-feature-name-no-unknown] 禁止未知的media名称`
-* `[error : no-duplicate-at-import-rules] 禁止值重复的@import语句`
+* `[error : no-duplicate-at-import-rules] 禁止同一个页面中值重复的@import语句`
 * `[error : no-unknown-animations] 禁止未知的animation-name`
 
 
