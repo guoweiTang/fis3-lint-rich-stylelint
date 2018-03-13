@@ -30,6 +30,11 @@ See the **options** what is same as [stylelint lint](https://stylelint.io/user-g
     'code': fileText,
     'formatter': 'string',
     'useEslintrc': false,
+    'ignoreFiles': [
+        'bower_components/**',
+        'node_modules/**',
+        'lint-fixed/**'
+    ],
     'config': {
         'rules': rules
     }
@@ -40,6 +45,10 @@ Output the restored file to the directory '/lint-fixed/**', the premise is that 
 #### options
 * `"root": true` Get root permissions, it will modify the source file，this operation does't promise correctness, so be careful!!!
 * `"dirname": '/lint-fixed'` Specify the root directory of the repaired file output
+
+### ignoreFiles: [String]
+ Glob patterns for paths to ignore.
+ **Be careful the property named `ignorePattern` is discarded.**
 
 ### Rules
 As mentioned above, the following is introduce of **rules**:
